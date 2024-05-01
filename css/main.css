@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 33, 87); 
+    background-image: linear-gradient(#001b3b,#1444a3,#6CB4EE);
+}
+
+nav{
+    font-family: 'Raleway', sans-serif;
+    background-color: #a0c2e4;
+    width: 100%;
+    height: 100px;
+
+    position: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+.nav-ul{
+    position: absolute;
+    list-style-type: none;
+
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.nav-ul .nav-li{
+    float: left;
+    padding: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    text-shadow: 1px #040404;
+    font-size: 18px;
+    font-weight: bold;
+    transition: ease-in-out 0.4s;
+    
+}
+
+.nav-li a{
+    color: #1444a3 ;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgb(156, 156, 156);
+}
+
+.nav-li a:hover{
+    color: #3578af;
+    transition: 1s;
+}
+
+.logo{
+    position: absolute;
+    display: block;
+    left: 20px;
+    width: auto; 
+    height: auto;
+}
+
+.search{
+    position: absolute;
+    right: 20px;
+}
+
+input{
+   position: relative;
+   display: inline-block;
+   font-size: 15px;
+   box-sizing: border-box;
+   transition: 0.5s;
+   border: none;
+}
+
+input[type="text"]{
+    background: none;
+    background-color: rgb(253, 253, 253);
+    padding: 5px;
+    height: 40px;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid black;
+}
+
+input[type="submit"]{
+    background-color: rgb(255, 90, 1);
+    color: white;
+    height: 40px;
+    width: 80px;
+    font-weight: bold;
+    border-radius: 10px 0 0 10px;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(175, 63, 3);
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+main{
+    height: auto;
+    width: 100%;
+    padding-top: 110px;
+
+}
+
+.section{
+    color: white;
+    margin-left: 20px;
+    margin-top: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center
+}
+
+h1, span{
+    font-size: 50px;
+    
+}
+
+span{
+    color: rgb(255, 90, 1);
+    border: none;
+}
+
+button{
+    background-color: rgb(255, 90, 1);
+    margin-top: 20px;
+    width: 130px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(175, 63, 3);
+    transition: ease-in-out 0.5s; 
+    cursor: pointer;
+}
+
+.sm-content{
+    margin-left: 30px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.cards-principal{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+
+   
+}
+
+.card{
+    width: 350px;
+    
+
+    margin-top: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;
+
+    overflow: hidden;
+    
+
+   
+}
+
+.child{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: all 1.1s;
+}
+.card:hover .child{
+    transform: scale(105%);
+}
+
+.card-info{
+    background: #0073f7;
+    color: white;
+    height: 200px;
+    border-radius: 0px 0px 10px 10px;
+    text-align: left;
+    cursor: pointer;
+}
+.card-info:hover{
+    margin-top: 0;
+    background-color: #0044cb;
+    transition: ease-in-out 0.5s;
+}
+
+.h1-info{
+    color: white;
+    text-align: center;
+    height: auto;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 190px;
+    line-height: 80px;
+    letter-spacing: 5px;
+}
+
+h3{
+    margin-left: 10px; 
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.p-info{
+    margin-left: 30px;
+    line-height: 20px;
+}
+
+.a-info{
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+
+}
+
+.a-info:hover{
+    color: #9a9a9a;
+    transition: 0.5s;
+}
+
+
+
+.img-noticia{
+    border-radius: 10px 10px 0 0;
+    width: 100%; 
+    height: 250px;
+    cursor: pointer;
+    border: 1px solid #040404;
+    padding: 0;
+
+    overflow: hidden;
+}
+
+
+footer{
+    position: sticky;
+    font-family: 'Raleway', sans-serif;
+    background: #292929;
+    color: white;
+    height: 500px;
+    margin-bottom: 0;
+    
+}
+
+.main-footer{
+    bottom: 0;
+}
+
+.ft-row{
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+
+.ft-div h2{
+    font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 40px;
+	font-weight: 700;
+	position: relative;
+    
+    margin-left: 0px;  
+    margin-top: 20px;   
+}
+
+.ft-div h2::before{
+    content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: rgb(255, 90, 1);
+	height: 3px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+
+.ft-ul .ft-li{
+    color: #7c7c7c;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 18px;
+
+    margin-top: 20px;
+    flex-wrap: wrap;   
+}
+
+.ft-ul .ft-li:hover{
+    color: rgb(201, 201, 201);
+    transition: ease-in-out 0.4s;
+    cursor: pointer;
+}
+
+
+.ft-social h2{
+    font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 40px;
+	font-weight: 700;
+	position: relative;
+    
+    margin-left: 0px;  
+    margin-top: 20px;   
+}
+
+.ft-social h2::before{
+    content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: rgb(255, 90, 1);
+	height: 3px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.media{
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.media:hover{
+    background-color: rgb(181, 180, 180);
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.social-imgs{
+    margin-left: 0px;
+
+}
+
+.smal-info{
+    position: absolute;
+    top: 470px;
+    font-size: 9px;
+    line-height: 1px;
+    text-align: center;
+}
+p{
+    line-height: 13px;
+}
